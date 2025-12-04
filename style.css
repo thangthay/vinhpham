@@ -1,0 +1,72 @@
+/* --- CÁC CÀI ĐẶT CƠ BẢN (Giữ lại từ bài cũ) --- */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    text-align: center; /* Căn giữa để nav hiển thị đẹp hơn */
+}
+
+/* --- BƯỚC 3: Nhận xét (Comment) kiểu dáng li hiện có --- */
+/*
+li {
+    list-style-type: none;
+    display: inline;
+}
+*/
+
+/* --- BƯỚC 4: Thay đổi NAV --- */
+nav {
+    background-color: #eeeeee;
+    padding: 10px;
+    /* Yêu cầu: Sử dụng khối nội tuyến (inline-block) */
+    display: inline-block;
+    /* Yêu cầu: Chiều rộng khoảng 80% */
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+/* --- BƯỚC 5: Bộ chọn hậu duệ cho hình ảnh trong nav --- */
+nav img {
+    /* Yêu cầu: Chiều rộng khoảng 10% */
+    width: 10%;
+    vertical-align: middle; /* Căn chỉnh ảnh thẳng hàng với menu */
+}
+
+/* --- BƯỚC 6 & 8: Tạo kiểu và điều chỉnh lớp GRID --- */
+.grid {
+    /* Yêu cầu: Sử dụng Grid */
+    display: grid;
+    /* Yêu cầu: Hai cột, mỗi cột xấp xỉ 40% */
+    grid-template-columns: 40% 40%;
+    
+    /* BƯỚC 8: Chơi với các giá trị justify-content, align-items, row-gap */
+    justify-content: center; /* Căn giữa toàn bộ lưới */
+    row-gap: 30px;           /* Khoảng cách giữa các hàng */
+    column-gap: 20px;        /* Khoảng cách giữa các cột */
+    margin-bottom: 50px;
+}
+
+/* --- BƯỚC 7: Bộ chọn hậu duệ cho hình ảnh trong lớp Grid --- */
+.grid img {
+    /* Yêu cầu: Hình ảnh chiếm 100% chiều rộng của cột chứa nó */
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 2px solid #ccc; /* Thêm viền để dễ nhìn (tùy chọn) */
+}
+
+/* --- BƯỚC 9: Tạo kiểu cho lớp FLEX --- */
+.flex {
+    /* Yêu cầu: Sử dụng Flexbox */
+    display: flex;
+    /* Yêu cầu: Flex-wrap để xuống dòng khi hết chỗ */
+    flex-wrap: wrap;
+    /* Yêu cầu: Chơi với justify-content */
+    justify-content: space-around; /* Chia đều khoảng cách xung quanh */
+    gap: 15px;
+}
+
+/* Style bổ sung cho ảnh trong flex để nó không quá to */
+.flex img {
+    width: 30%; /* Ví dụ */
+    height: auto;
+}
